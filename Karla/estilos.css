@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto {
+    text-transform: uppercase;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 0, 190);
+    background-image: linear-gradient(to left,
+    rgb(255, 0, 190),rgb(255, 0, 220), black, rgb(35, 31, 31));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 10s linear infinite;
+    
+}
+
+@keyframes move {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.texto:hover {
+    color: rgb(255, 0, 190);
+    text-shadow: 0 0 10px rgba(255, 0, 212, 0.5),
+                 0 0 20px rgba(255, 0, 212, 0.5),
+                 0 0 40px rgba(255, 0, 212, 0.5),
+                 0 0 80px rgba(255, 0, 212, 0.5),
+                 0 0 160px rgba(255, 0, 212, 0.5),
+                 0 0 320px rgba(255, 0, 212, 0.5);
+    
+}
+
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+}
+
+#si {
+    background-color: rgb(255, 0, 190);
+    color: #1A1A1A;
+    box-shadow: 0 0 10px rgb(251, 0, 190), 0 0 40px rgba(255, 0, 212, 0.5);
+}
+
+#si:hover {
+    background-color: #1A1A1A;
+    color: rgb(255, 0, 190);
+    box-shadow: 0 0 10px rgb(255, 0, 190), 0 0 20px rgb(255, 0, 190), 0 0 40px rgb(255, 0, 190);
+}
+
+
+#no {
+    background-color: rgb(255, 0, 190);
+    color: #1A1A1A;
+    box-shadow: 0 0 10px rgb(255, 0, 190), 0 0 40px rgba(255, 0, 212, 0.5);
+}
+
+#no:hover {
+    background-color: #1A1A1A;
+    color: rgb(255, 0, 190);
+    box-shadow: 0 0 10px rgb(255, 0, 190), 0 0 20px rgb(255, 0, 190), 0 0 40px rgb(255, 0, 190);
+}
